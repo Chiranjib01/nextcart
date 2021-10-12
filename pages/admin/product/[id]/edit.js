@@ -48,7 +48,7 @@ const EditProduct = ({ product }) => {
       setValue('countInStock', product.countInStock);
       setValue('description', product.description);
     }
-  }, []);
+  }, [product]);
   const imageUploadHandler = async (file, fieldName) => {
     try {
       if (fieldName === 'image') {
