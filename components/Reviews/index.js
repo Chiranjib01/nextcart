@@ -350,7 +350,7 @@ const Reviews = ({ productId }) => {
       <div className={styles.main}>
         {reviews.length > 0 ? (
           reviews.map((review) => (
-            <article className={styles.review}>
+            <article key={review._id} className={styles.review}>
               <div className={styles.profileImage}></div>
               <div className={styles.userName}>{review.userName}</div>
               <div className={styles.rating}>

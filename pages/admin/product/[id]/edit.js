@@ -18,6 +18,13 @@ import Product from '../../../../models/Product';
 import docToPlain from '../../../../utils/docToPlain';
 
 const EditProduct = ({ product }) => {
+  const [isProcessing, setIsProcessing] = useState(false);
+  const [isImageUploading, setIsImageUploading] = useState(false);
+  const [isFeaturedUploading, setIsFeaturedUploading] = useState(false);
+  const [isFeatured, setIsFeatured] = useState(product.isFeatured);
+  const router = useRouter();
+  const { adminInfo } = useSelector((state) => state.adminReducer);
+  const dispatch = useDispatch();
   const {
     handleSubmit,
     register,
@@ -26,10 +33,11 @@ const EditProduct = ({ product }) => {
   } = useForm({
     resolver: yupResolver(productSchema),
   });
-  if (!product) {
-    return <Loading />;
-  }
+
   useEffect(() => {
+    if (!product) {
+      return <Loading />;
+    }
     if (product) {
       setValue('name', product.name);
       setValue('category', product.category);
@@ -41,13 +49,6 @@ const EditProduct = ({ product }) => {
       setValue('description', product.description);
     }
   }, []);
-  const [isProcessing, setIsProcessing] = useState(false);
-  const [isImageUploading, setIsImageUploading] = useState(false);
-  const [isFeaturedUploading, setIsFeaturedUploading] = useState(false);
-  const [isFeatured, setIsFeatured] = useState(product.isFeatured);
-  const router = useRouter();
-  const { adminInfo } = useSelector((state) => state.adminReducer);
-  const dispatch = useDispatch();
   const imageUploadHandler = async (file, fieldName) => {
     try {
       if (fieldName === 'image') {

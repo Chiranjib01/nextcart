@@ -95,7 +95,7 @@ const Login = () => {
           </div>
           <Button type="submit">Login</Button>
           <p>
-            Don't Have An Account ?&nbsp;
+            Don&apos;t Have An Account ?&nbsp;
             <NextLink href="/register">
               <a>Register</a>
             </NextLink>
