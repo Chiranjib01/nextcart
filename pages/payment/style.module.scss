@@ -1,0 +1,54 @@
+.container {
+  padding: 0 20px;
+  font-family: 'Times New Roman', Times, serif;
+  form {
+    width: 100%;
+    max-width: 600px;
+    margin: 20px auto;
+  }
+  .titleContainer {
+    font-family: 'Courier New', Courier, monospace;
+    max-width: 640px;
+    margin: 0 auto;
+  }
+  label {
+    font-weight: 600;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+  input {
+    padding: 10px 20px;
+    margin: 10px;
+    outline: none;
+    border: 1.5px solid #1cd7f0;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+  button {
+    background-color: aqua;
+    text-transform: capitalize;
+    font-weight: 600;
+    border: 1px solid #08bea6;
+    cursor: pointer;
+    width: 100%;
+    padding: 9px 10px;
+    box-shadow: 1px 2px 2px 2px #c6c3c3;
+    border-radius: 4px;
+    margin: 10px 0;
+  }
+  .backButton {
+    background-color: #ebe3e3;
+    box-shadow: 1px 2px 2px 2px #c6c3c3;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .container {
+    padding: 0 10px;
+  }
+  .title {
+    padding: 10px;
+  }
+}

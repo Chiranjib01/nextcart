@@ -1,0 +1,219 @@
+.container {
+  width: 100%;
+  background-color: #1cd7f0;
+  padding: 22px;
+  margin-bottom: 20px;
+  box-shadow: 0 1px 3px 2px rgba(0, 0, 0, 0.2);
+  .openMenuBtn {
+    transform: rotateZ(90deg);
+    font-weight: 700;
+    position: relative;
+    margin-right: 30px;
+    margin-top: -12px;
+    pointer-events: stroke;
+    p {
+      position: absolute;
+      border: 1px solid #1cd7f0;
+      bottom: 0;
+      height: 27px;
+      padding: 0 4px;
+      border-radius: 50%;
+      transition: 0.2s all ease-in-out;
+      &:hover {
+        cursor: pointer;
+        border: 1px solid #a19d9d;
+      }
+    }
+  }
+  .sideMenu {
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.2);
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 50;
+    transition: 0.5s all ease-in-out;
+    aside {
+      background-color: #fff;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      width: 60%;
+      max-width: 300px;
+      z-index: 100;
+      .main {
+        margin: 40px 25px;
+      }
+      .logo {
+        pointer-events: stroke;
+        margin-bottom: 25px;
+      }
+      .menuItem {
+        text-transform: capitalize;
+        margin: 3px 0;
+        padding: 3px 5px;
+        cursor: pointer;
+        transition: 0.2s all ease-in-out;
+        font-size: 18px;
+        font-family: 'Times New Roman', Times, serif;
+        &:hover {
+          background-color: #e4e3e3;
+        }
+      }
+    }
+    section {
+      height: 100%;
+    }
+  }
+}
+.nav {
+  display: flex;
+  align-items: center;
+  .logo {
+    span {
+      font-size: 24px;
+      font-weight: 800;
+      cursor: pointer;
+    }
+    margin-right: 10px;
+  }
+
+  .flexGrow {
+    flex-grow: 1;
+    margin-right: 10px;
+    .searchBox {
+      display: block;
+      max-width: 360px;
+      width: 100%;
+      margin: 0 auto;
+      padding: 10px 10px;
+      border: none;
+      border-radius: 5px;
+      outline: none;
+      box-shadow: 0 0 2px 3px rgba(0, 0, 0, 0.2);
+    }
+  }
+  .navigation {
+    display: flex;
+    align-content: center;
+    align-items: center;
+    button {
+      font-size: 15px;
+      min-width: 130px;
+      font-weight: 600;
+      background: transparent;
+      border: 2px solid #108fca;
+      padding: 6px 10px;
+      border-radius: 15px;
+      outline: none;
+      cursor: pointer;
+    }
+    .badge {
+      display: inline-block;
+      position: relative;
+      top: -8px;
+      right: 2.5px;
+      background-color: #000;
+      color: #fff;
+      width: 21px;
+      height: 21px;
+      text-align: center;
+      border-radius: 50%;
+      -webkit-border-radius: 50%;
+      -moz-border-radius: 50%;
+      font-size: 14px;
+      overflow: hidden;
+    }
+    li {
+      display: inline;
+      font-size: 18px;
+      margin: 0 16px;
+      font-weight: 500;
+      cursor: pointer;
+    }
+  }
+}
+.profileMenu {
+  .bgBlack {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    top: 0;
+    right: 0;
+    z-index: 10;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  article {
+    position: relative;
+  }
+  .menu {
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    z-index: 20;
+    top: -10px;
+    right: 0;
+    background-color: #fff;
+    box-shadow: -1px 2px 1px 1px #a19d9d;
+    // box-shadow: 1px 2px 2px 2px #a19d9d;
+    border-radius: 4px;
+    min-width: 110px;
+    li {
+      list-style: none;
+      margin: 0 auto;
+      padding: 8px 6px;
+      width: 100%;
+      font-weight: 550;
+      font-family: 'Times New Roman', Times, serif;
+      font-size: 16px;
+      border-bottom: 1px solid #d6d0d0;
+      transition: all 0.3s ease-in-out;
+      border-radius: 1px;
+      &:active,
+      &:focus,
+      &:hover {
+        background-color: #d6d0d0;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 630px) {
+  .container {
+    .navigation {
+      .cart {
+        display: none;
+      }
+    }
+    form {
+      position: absolute;
+      top: 0;
+      left: 2px;
+      right: 2px;
+    }
+    .searchBox {
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 78px;
+      max-width: unset !important;
+      width: 100%;
+    }
+  }
+}
+@media only screen and (max-width: 300px) {
+  .container {
+    .logo {
+      span {
+        font-size: 20px;
+      }
+    }
+    .navigation {
+      button {
+        font-size: 13px;
+      }
+    }
+  }
+}

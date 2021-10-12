@@ -1,0 +1,114 @@
+.container {
+  padding: 0 10px;
+  margin-top: 10px;
+  display: flex;
+  align-items: flex-start;
+  font-family: 'Times New Roman', Times, serif;
+  .details {
+    flex: 7;
+    .card {
+      box-shadow: 0 2px 2px 2px #d3cccc;
+      border-top: 0.5px solid #d3cccc;
+      padding: 10px;
+      margin: 10px;
+      h2 {
+        font-size: 20px;
+      }
+      p {
+        padding: 0 5px;
+        margin: 5px 0;
+        text-transform: capitalize;
+        font-weight: 500;
+      }
+    }
+  }
+  .table {
+    box-shadow: 0 2px 2px 2px #d3cccc;
+    border-top: 0.5px solid #d3cccc;
+    padding: 10px;
+    margin: 0 10px;
+    table,
+    tr {
+      width: 100%;
+      text-align: left;
+    }
+    th,
+    td {
+      border-bottom: 1px solid #d3cccc;
+      padding: 15px 5px;
+    }
+    select {
+      width: 50px;
+      padding: 4px 2px;
+      border: 1px solid #33ad9d;
+      font-weight: 500;
+    }
+    select:active,
+    select:focus {
+      outline: none;
+    }
+
+    button {
+      padding: 6px 16px;
+      cursor: pointer;
+      background-color: #3bc7b4;
+      border: 1px solid #33ad9d;
+    }
+  }
+  .textRight {
+    text-align: right;
+  }
+  .textCenter {
+    text-align: center;
+  }
+  .summary {
+    box-shadow: 0 2px 2px 2px #d3cccc;
+    border-top: 0.5px solid #d3cccc;
+    flex: 3;
+    padding: 10px;
+    margin: 0 10px;
+    p {
+      margin: 5px;
+      font-size: 18px;
+    }
+    table {
+      width: 100%;
+    }
+    select {
+      width: 100%;
+      padding: 4px 10px;
+      margin: 20px 0;
+    }
+  }
+}
+.line {
+  border-top: 1px solid #d3cccc;
+  margin: 10px 0;
+  width: 100%;
+}
+.title {
+  padding: 0 15px;
+  font-family: 'Times New Roman', Times, serif;
+}
+.errorBox {
+  color: #f04040;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 18px;
+  text-align: center;
+  margin: 30px auto;
+}
+.fullWidth {
+  width: 100%;
+}
+
+@media only screen and (max-width: 800px) {
+  .container {
+    display: initial;
+    .summary {
+      margin-top: 10px;
+    }
+  }
+  .title {
+    padding: 0 10px;
+  }
+}

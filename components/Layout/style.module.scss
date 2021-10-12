@@ -1,0 +1,14 @@
+.container {
+  background-color: #ffffff;
+  max-width: 1200px;
+  margin: 0 auto;
+  border-top: 0;
+  border-bottom: 0;
+  border-left: 1px solid #d3cccc;
+  border-right: 1px solid #d3cccc;
+  width: 100%;
+  overflow-x: hidden;
+  .main {
+    min-height: 70vh;
+  }
+}

@@ -1,0 +1,66 @@
+.container {
+  padding: 0 20px;
+  .processing {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+  }
+  form {
+    width: 100%;
+    max-width: 700px;
+    margin: 20px auto;
+  }
+  .titleContainer {
+    font-family: 'Times New Roman', Times, serif, sans-serif;
+    letter-spacing: 3px;
+    max-width: 710px;
+    margin: 0 auto;
+  }
+  label {
+    display: block;
+    font-weight: 600;
+  }
+  .inlineBlock {
+    display: inline;
+    cursor: pointer;
+  }
+  input[type='text'],
+  input[type='number'] {
+    width: 100%;
+    padding: 10px 20px;
+    margin: 10px 0;
+    outline: none;
+    border: 1.5px solid #1cd7f0;
+  }
+  input[type='checkbox'] {
+    padding: 10px 20px;
+    margin: 10px 10px 10px 0;
+    display: inline-block;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+  input[type='file'] {
+    display: none;
+  }
+  .uploadBtn {
+    padding: 6px 8px;
+    cursor: pointer;
+    background-color: #fff;
+    border: none;
+    color: #f0c000;
+    text-transform: uppercase;
+    box-shadow: 0px 2px 8px 3px rgba(0, 0, 0, 0.3);
+    transition: 0.25s all ease-in-out;
+    margin: 5px 0 10px 0;
+    display: inline-block;
+  }
+}
+@media only screen and (max-width: 800px) {
+  .container {
+    padding: 0 10px;
+  }
+}

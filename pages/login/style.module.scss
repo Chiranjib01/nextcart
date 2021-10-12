@@ -1,0 +1,43 @@
+.container {
+  padding: 0 20px;
+  form {
+    width: 100%;
+    max-width: 700px;
+    margin: 20px auto;
+  }
+  .titleContainer {
+    font-family: 'Times New Roman', Times, serif;
+    letter-spacing: 3px;
+    max-width: 710px;
+    margin: 0 auto;
+  }
+  label {
+    display: block;
+    font-weight: 600;
+  }
+  input {
+    width: 100%;
+    padding: 10px 20px;
+    margin: 10px 0;
+    outline: none;
+    border: 1.5px solid #1cd7f0;
+  }
+  .emailSent {
+    // border: 1px solid #1bc01b;
+    border: none;
+    margin: 10px auto;
+    padding: 10px 10px;
+    letter-spacing: 0.7px;
+    text-align: center;
+    box-shadow: 0 0 2px 3px rgba(84, 206, 84, 0.5);
+    max-width: 690px;
+  }
+}
+@media only screen and (max-width: 800px) {
+  .container {
+    padding: 0 10px;
+    .titleContainer {
+      text-align: center;
+    }
+  }
+}

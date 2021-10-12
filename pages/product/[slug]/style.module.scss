@@ -1,0 +1,40 @@
+.container {
+  padding: 0 10px;
+  display: flex;
+  .details {
+    border: 1px solid #d3cccc;
+    border-left: 0px;
+    padding: 10px;
+    width: 100%;
+    flex: 3;
+    font-family: 'Times New Roman', Times, serif;
+    h2 {
+      font-size: 20px;
+      margin: 10px 0;
+    }
+  }
+  .imageContainer {
+    border: 1px solid #d3cccc;
+    padding: 10px;
+    width: 100%;
+    flex: 5;
+  }
+}
+.card {
+  box-shadow: 0 2px 2px 2px #d3cccc;
+  padding: 14px 10px;
+}
+.line {
+  border-top: 1px solid #d3cccc;
+  margin: 5px 0;
+}
+
+@media only screen and (max-width: 850px) {
+  .container {
+    display: initial;
+    .details {
+      border: 1px solid #d3cccc;
+      border-top: 0px;
+    }
+  }
+}

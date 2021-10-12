@@ -1,0 +1,39 @@
+{
+  "name": "nextcart",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@hookform/resolvers": "^2.8.1",
+    "@paypal/react-paypal-js": "^7.3.3",
+    "axios": "^0.21.4",
+    "bcryptjs": "^2.4.3",
+    "cloudinary": "^1.27.0",
+    "googleapis": "^88.2.0",
+    "js-cookie": "^3.0.1",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^6.0.7",
+    "multer": "^1.4.3",
+    "next": "11.1.2",
+    "next-connect": "^0.10.2",
+    "nodemailer": "^6.6.5",
+    "react": "17.0.2",
+    "react-dom": "17.0.2",
+    "react-hook-form": "^7.16.1",
+    "react-redux": "^7.2.5",
+    "redux": "^4.1.1",
+    "sass": "^1.42.0",
+    "slugify": "^1.6.1",
+    "streamifier": "^0.1.1",
+    "yup": "^0.32.9"
+  },
+  "devDependencies": {
+    "eslint": "7.32.0",
+    "eslint-config-next": "11.1.2"
+  }
+}

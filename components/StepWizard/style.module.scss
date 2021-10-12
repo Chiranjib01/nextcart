@@ -1,0 +1,45 @@
+.wizardContainer {
+  max-width: 720px;
+  margin: 20px auto 10px auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  .step {
+    border: 2px solid #d3cccc;
+    background-color: #d3cccc;
+    display: inline;
+    padding: 6px 12px;
+    border-radius: 50%;
+    font-weight: bold;
+    .checkMark {
+      border-right: 3px solid #fff;
+      border-bottom: 3px solid #fff;
+      transform: rotate(45deg);
+      height: 20px;
+      width: 10px;
+    }
+  }
+  .completed {
+    border-color: #1cd7f0;
+    background-color: #1cd7f0;
+  }
+  .active {
+    border-color: #1cd7f0;
+    background-color: #1cd7f0;
+  }
+  .stepLine {
+    border: 1px solid #1cd7f0;
+    flex-grow: 1;
+    height: 0;
+  }
+}
+.labelContainer {
+  max-width: 720px;
+  margin: 10px auto 20px auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  .grow {
+    flex-grow: 1;
+  }
+}

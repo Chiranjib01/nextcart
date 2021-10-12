@@ -1,0 +1,162 @@
+.container {
+  padding: 10px;
+  margin: 0 10px;
+  border: 1px solid #d3cccc;
+  border-top: 0;
+  .loginToReview {
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 16px;
+  }
+  .noReview {
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 600;
+    text-align: center;
+  }
+  form {
+    width: 100%;
+    max-width: 600px;
+    margin: 20px auto;
+  }
+  .main {
+    max-width: 600px;
+    margin: 10px auto;
+    article {
+      position: relative;
+      margin: 10px auto;
+      max-width: 600px;
+      // border: 1px solid #d3cccc;
+      padding: 4px 5px;
+      border-radius: 5px;
+      background-color: #f2f2f2;
+      .bgDark {
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        z-index: 20;
+      }
+      .profileImage {
+        display: inline-block;
+        height: 40px;
+        width: 40px;
+        background-color: #1cd7f0;
+        border-radius: 50%;
+        border: 1px solid #069baf;
+      }
+      .userName {
+        display: inline-block;
+        position: absolute;
+        top: 0;
+        margin: 0 auto 5px 10px;
+      }
+      .rating {
+        position: absolute;
+        top: 10px;
+        margin: 10px auto 2px 7px;
+        display: inline-block;
+      }
+      .text {
+        margin: 0 auto 0 50px;
+        text-transform: capitalize;
+        font-weight: 500;
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 16px;
+      }
+      .button {
+        position: absolute;
+        right: 20px;
+        top: 30%;
+        transform: rotateZ(90deg);
+        font-weight: 600;
+        text-align: center;
+        p {
+          border: none;
+          height: 33px;
+          width: 33px;
+          border-radius: 50%;
+          transition: 0.2s all ease-in-out;
+          &:hover {
+            background-color: #e9e0e0;
+            cursor: pointer;
+          }
+        }
+      }
+      .menuContainer {
+        position: relative;
+        .menu {
+          background-color: #fff;
+          z-index: 30;
+          position: absolute;
+          right: 35px;
+          top: -29px;
+          padding: 3px 0;
+          border-radius: 0;
+          font-family: 'Times New Roman', Times, serif;
+          box-shadow: 0 1px 2px 2px rgba(0, 0, 0, 0.2);
+          .menuItem {
+            border: 1px solid #e9e0e0;
+            padding: 3px 14px;
+            transition: 0.25s all ease-in-out;
+            &:hover,
+            &:focus,
+            &:active {
+              color: #f0c000;
+              cursor: pointer;
+            }
+          }
+        }
+      }
+    }
+  }
+  .reviewLabel {
+    display: block;
+    font-weight: 600;
+  }
+  .starContainer {
+    margin: 8px 0;
+  }
+  input {
+    width: 100%;
+    padding: 10px 20px;
+    margin: 10px 0;
+    outline: none;
+    border: 1.5px solid #1cd7f0;
+  }
+  .editBtnContainer {
+    margin: 5px auto;
+    display: flex;
+  }
+  .editBtn {
+    margin: 5px auto;
+    display: inline-block;
+    padding: 5px 10px;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 2px;
+    border: none;
+    color: green;
+    transition: 0.2s all ease-in-out;
+    &:hover {
+      cursor: pointer;
+      background-color: #98d198;
+    }
+  }
+  .titleContainer {
+    font-family: 'Times New Roman', Times, serif;
+    letter-spacing: 3px;
+    max-width: 710px;
+    margin: 0 auto;
+    text-align: center;
+    font-weight: 500;
+    font-size: 24px;
+    padding: 10px 0;
+  }
+}
+@media only screen and (max-width: 800px) {
+  .container {
+    margin: 0;
+  }
+}

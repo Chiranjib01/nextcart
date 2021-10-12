@@ -1,0 +1,35 @@
+.container {
+  padding: 0 20px;
+  .main {
+    width: 100%;
+    max-width: 600px;
+    margin: 12.4px auto;
+    article {
+      text-align: center;
+      margin: 25px auto 20px auto;
+      padding: 12px 10px;
+      border-radius: 5px;
+      box-shadow: 0 0 2px 2px rgba(97, 87, 87, 0.3);
+      font-size: 17px;
+    }
+  }
+  .titleContainer {
+    font-family: 'Times New Roman', Times, serif;
+    letter-spacing: 3px;
+    max-width: 610px;
+    margin: 0 auto;
+    text-align: center;
+  }
+}
+@media only screen and (max-width: 800px) {
+  .container {
+    padding: 0 10px;
+    .titleContainer {
+      text-align: center;
+      font-size: 12px;
+    }
+    .main {
+      max-width: 250px;
+    }
+  }
+}

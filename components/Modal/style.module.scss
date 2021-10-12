@@ -1,0 +1,34 @@
+.modal {
+  position: fixed;
+  top: 35px;
+  width: 100%;
+  left: 0;
+  text-align: center;
+  p {
+    display: inline-block;
+    border: 1px solid #000;
+    color: #000;
+    font-size: 10px;
+    padding: 2px 4px;
+    border-radius: 50%;
+    margin-right: 2px;
+    cursor: pointer;
+  }
+  div {
+    padding: 7px;
+    font-family: 'Times New Roman', Times, serif;
+    margin-top: 20px;
+    background-color: red;
+    text-transform: capitalize;
+    box-shadow: 1px 2px 2px 2px #b1aba8;
+    display: inline-block;
+    border-radius: 5px;
+    color: #fff;
+  }
+  .error {
+    background-color: red;
+  }
+  .success {
+    background-color: green;
+  }
+}
