@@ -6,7 +6,6 @@
 .pnp.js
 /components/Rating6Star
 /utils/data.js
-/components/RatingInput
 # testing
 /coverage
 
