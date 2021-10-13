@@ -10,7 +10,7 @@ import Loading from '../../../components/Loading';
 const Activate = () => {
   const router = useRouter();
   const [message, setMessage] = useState('');
-  const [loading, setLoading] = useState(false);
+  const [loading, setLoading] = useState(true);
   const { token } = router.query;
   useEffect(() => {
     const activate = async () => {
@@ -29,7 +29,7 @@ const Activate = () => {
     if (token) {
       activate();
     }
-  }, []);
+  }, [loading]);
   const clickHandler = async () => {
     router.replace(`/login`);
   };
