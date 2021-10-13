@@ -26,10 +26,10 @@ const Activate = () => {
         setMessage(getError(err));
       }
     };
-    if (token) {
+    if (token && !message) {
       activate();
     }
-  }, [loading]);
+  }, [loading, token]);
   const clickHandler = async () => {
     router.replace(`/login`);
   };
