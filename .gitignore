@@ -5,7 +5,9 @@
 /.pnp
 .pnp.js
 /components/Rating6Star
+/components/RatingInput
 /utils/data.js
+/pages/api/seed.js
 # testing
 /coverage
 

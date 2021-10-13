@@ -4,7 +4,6 @@ import Product from '../models/Product';
 import docToPlain from '../utils/docToPlain';
 import Products from '../components/Products';
 import Loading from '../components/Loading';
-import RatingInput from '../components/RatingInput';
 
 export default function Home({ products }) {
   if (!products) {

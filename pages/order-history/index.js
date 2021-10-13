@@ -82,7 +82,7 @@ const OrderHistory = () => {
                   <tr key={order._id}>
                     <td>{order._id.slice(20)}</td>
                     <td>{order.createdAt}</td>
-                    <td>${order.totalPrice}</td>
+                    <td>{`$${order.totalPrice}`}</td>
                     <td>
                       {order.isPaid ? `Paid At ${order.paidAt}` : 'Not Paid'}
                     </td>
